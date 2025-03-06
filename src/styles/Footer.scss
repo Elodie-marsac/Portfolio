@@ -1,0 +1,8 @@
+@import "../styles/Variables&Mixins.scss";
+
+.footer {
+  background-color: $light-color;
+  color: $dark-color;
+  padding: 10px;
+  text-align: center;
+}
