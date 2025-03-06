@@ -10,9 +10,6 @@ const App = () => {
     <>
       <Header />
       <MainContainer />
-
-
-
       <Footer />
     </>
   );
