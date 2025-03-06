@@ -1,0 +1,43 @@
+@import "./Variables&Mixins.scss";
+
+.header {
+  background-color: $primary-color;
+  color: $light-color;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #0a1a36;
+
+  h1 {
+    @include title-style($h1-size, $font-weight-semibold, $light-color);
+  }
+
+  p {
+    @include text-style($text-classic, $font-weight-regular, $light-color);
+  }
+
+  nav {
+    ul {
+      display: flex;
+      gap: 10px;
+      list-style: none;
+    }
+
+    a {
+      @include text-style($text-classic, $font-weight-regular, $light-color);
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+
+    @include tablet {
+      ul {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+  }
+}

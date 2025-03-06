@@ -1,0 +1,51 @@
+/* RESET STYLES */
+@import "./Variables&Mixins.scss";
+
+/* Box-sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove text decoration */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset body styles */
+body {
+  @include text-style();
+  background-color: $gray-color;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1 {
+  @include title-style($h1-size);
+}
+h2 {
+  @include title-style($h2-size);
+}
+h3 {
+  @include title-style($h3-size);
+}
+
+/* Images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Buttons */
+button {
+  @include button-style();
+}
