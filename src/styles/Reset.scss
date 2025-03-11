@@ -3,9 +3,18 @@
 
 /* Box-sizing */
 * {
+  border: 1px solid red;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  list-style: none;
+  text-decoration: none;
+
+  html {
+    width: 62.5%;
+  }
 }
 
 /* Remove list styles */
@@ -23,7 +32,7 @@ a {
 /* Reset body styles */
 body {
   @include text-style();
-  background-color: $gray-color;
+  background-color: $bg-color;
   line-height: 1.6;
 }
 
@@ -36,6 +45,7 @@ h2 {
 }
 h3 {
   @include title-style($h3-size);
+  width: 100%;
 }
 
 /* Images responsive */
